@@ -18,6 +18,7 @@ training.
 │   └── part3_hmm.py       # HMM POS tagger with Viterbi decoding
 ├── outputs/               # Generated plots and result summaries
 ├── run.py                 # Runs all three parts in order
+├── run.sh                 # Shell script version of the same run
 ├── requirements.txt
 └── README.md
 ```
@@ -67,6 +68,12 @@ This script executes all three parts in sequence:
 
 Each step prints its results to the console, and the generated plots and text
 summaries are saved in `outputs/`.
+
+If you prefer a shell script, you can run the same workflow with:
+
+```bash
+./run.sh
+```
 
 If you want to run the parts separately, you can still use:
 
