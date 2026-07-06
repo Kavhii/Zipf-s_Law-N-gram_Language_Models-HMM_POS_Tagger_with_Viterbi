@@ -1,0 +1,5 @@
+overall_acc=0.9388
+seen_acc=0.9499
+oov_acc=0.4462
+seen_tokens=226856
+oov_tokens=5119

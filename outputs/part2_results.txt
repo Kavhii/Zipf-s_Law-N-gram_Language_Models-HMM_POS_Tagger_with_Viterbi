@@ -1,0 +1,7 @@
+unigram_ppl=726.47
+bigram_ppl=1674.15
+bigram_addk_ppl=471.68
+trigram_ppl=11843.85
+vocab=24738
+train_sents=45872
+test_sents=11468
