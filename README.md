@@ -17,6 +17,7 @@ training.
 ├── sentences/
 │   └── part3_hmm.py       # HMM POS tagger with Viterbi decoding
 ├── outputs/               # Generated plots and result summaries
+├── run.py                 # Runs all three parts in order
 ├── requirements.txt
 └── README.md
 ```
@@ -52,16 +53,28 @@ python -m nltk.downloader brown universal_tagset
 
 ## How to Run
 
-Run the commands from the repository root:
+From the repository root, you can run the complete project with one command:
+
+```bash
+python run.py
+```
+
+This script executes all three parts in sequence:
+
+1. Zipf's law and lexical diversity analysis
+2. N-gram language model evaluation
+3. HMM POS tagging with Viterbi decoding
+
+Each step prints its results to the console, and the generated plots and text
+summaries are saved in `outputs/`.
+
+If you want to run the parts separately, you can still use:
 
 ```bash
 python nlu_assignment1/part1_zipf.py
 python nlu_assignment1/part2_lm.py
 python sentences/part3_hmm.py
 ```
-
-Each script prints the answers to the console. Generated plots and text
-summaries are saved in `outputs/`.
 
 ## Part 1: Zipf's Law and Corpus Analysis
 
